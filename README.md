@@ -74,6 +74,8 @@ Analyzed:
 - Gender distribution
 - Department distribution
 - Work location distribution
+- Education level distribution
+- Age distribution
 - Average age
 - Average experience
 - Average tenure
@@ -82,8 +84,10 @@ Analyzed:
 
 Analyzed:
 
-- Salary statistics by currency
+- Salary distribution
 - Salary ranges
+- Average salary by currency
+- Average salary by department
 - Average salary by experience level
 
 ### Experience Analysis
@@ -104,6 +108,7 @@ Analyzed:
 - Average performance review score
 - Performance by department
 - Performance by experience level
+- Relationship between experience and performance
 
 ### Tenure Analysis
 
@@ -117,20 +122,28 @@ Employees were grouped into:
 
 ## Visualizations
 
-The project generates 12 visualizations covering:
+The project generates **18 visualizations** covering workforce, salary, experience, performance, gender, department, and tenure analysis:
 
-1. Employee Gender Distribution
-2. Employee Count by Department
-3. Employee Count by Work Location
-4. Employee Count by Education Level
-5. Employee Age Distribution
-6. Employee Distribution by Salary Range
-7. Employee Distribution by Experience Level
-8. Employee Performance Rating Distribution
-9. Average Performance Score by Experience Level
-10. Average Performance Score by Department
-11. Employee Distribution by Tenure
-12. Average Salary by Experience Level
+1. Average Salary by Experience
+2. Employee Tenure Distribution
+3. Department Performance
+4. Performance by Experience Level
+5. Performance Rating Distribution
+6. Employee Experience Level Distribution
+7. Salary Range Distribution
+8. Employee Age Distribution
+9. Employee Education Distribution
+10. Employee Work Location Distribution
+11. Employee Department Distribution
+12. Employee Gender Distribution
+13. Average Salary by Department
+14. Salary Distribution
+15. Experience vs Performance
+16. Average Salary by Currency
+17. Gender Distribution
+18. Employees by Department
+
+All generated charts are stored in the `Output` folder.
 
 ## Attrition Analysis
 
@@ -138,10 +151,31 @@ The dataset does not contain a dedicated employee attrition, termination, or exi
 
 Employee tenure was analyzed instead to provide workforce retention-related context.
 
-## Project Outcome
+## Project Structure
 
-This project demonstrates the use of Python-based data cleaning, exploratory data analysis, statistical summaries, and data visualization to understand employee workforce patterns and support data-driven insights.
-
-## Author
-
-DHARANIDHARAN G
+```text
+Employee-Data-Analysis/
+│
+├── Employee_Data_Analysis.py
+├── employee_pay_equity_messy.csv
+├── README.md
+│
+└── Output/
+    ├── average_salary_by_experience.png
+    ├── employee_tenure_distribution.png
+    ├── department_performance.png
+    ├── performance_by_experience_level.png
+    ├── performance_rating_distribution.png
+    ├── employee_experience_level.png
+    ├── salary_range_distribution.png
+    ├── employee_age_distribution.png
+    ├── employee_education_distribution.png
+    ├── employee_work_location.png
+    ├── employee_department_distribution.png
+    ├── employee_gender_distribution.png
+    ├── average_salary_by_department.png
+    ├── salary_distribution.png
+    ├── experience_vs_performance.png
+    ├── average_salary_by_currency.png
+    ├── gender_distribution.png
+    └── employees_by_department.png
